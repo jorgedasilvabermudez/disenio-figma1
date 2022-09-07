@@ -1,0 +1,100 @@
+/*styles*/
+body{ background-color: #222222;}
+
+html{ font-size: 25px;
+box-sizing: border-box;}
+
+/*contenedor principal*/
+section{
+    margin: 30px 10px;
+    width: 100%;
+    text-align: center;
+}
+/*tarjetas*/
+.card{
+    margin: auto;
+    border-radius: 15px;
+    background-color: white;
+    width: 355px;
+    height: 755px;
+    margin-bottom: 30px;
+}
+
+/*texto img*/
+.card__img span{
+    color: white;
+    font-size: 20px;
+    display: inline-block;
+    margin: 133px 71px;
+}
+
+/*cards*/
+.card__img{
+    height: 290px;
+    border-radius: 15px;    
+}
+
+/*fondo 1*/
+section .card:nth-child(1) .card__img{
+    background-image: url(/img/Bg-1.jpg) ;
+    background-repeat: none;
+    background-size:cover; 
+}
+/*fondo 2*/
+section .card:nth-child(2) .card__img{
+    background-image: url(/img/Bg-2.jpg) ;
+    background-repeat: none;
+    background-size: cover;
+}
+/*fondo 3*/
+section .card:nth-child(3) .card__img{
+    background-image: url(/img/Bg-3.jpg) ;
+    background-repeat: none;
+    background-size: cover;
+}
+/*descripcion*/
+.card__desc{
+    margin-top: 30px;
+    margin-right: 15px;
+    margin-left: 14px;
+    height: 331px;
+    text-align: left;
+}
+/*link html,js,nodejs*/
+.card__link{
+    font-size: 20px;
+    margin-top: 30px;
+    margin-right: 34px;
+    margin-left: 34px;
+    text-align: center;
+}
+
+@media screen and (min-width:355px){
+
+    #middle-card{
+    margin: 0px 50px;
+    }
+
+    .card{
+        display: inline-block;
+        margin: auto; 
+        width: 430px;
+        height: 650px;        
+        margin-bottom: 30px;
+    }
+
+    .card__img span{
+        font-size:  44px;
+    } 
+
+    .card__desc{
+        width: 395px;
+        height: 243px;
+        margin-left: 17px;
+    }
+
+    .card__link{
+        font-size: 25px;
+    }
+
+} 
